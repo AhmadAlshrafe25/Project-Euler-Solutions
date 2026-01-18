@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int count = 0;
+    int sum = 0;
+
+    while(count < 1000){
+        if (count % 3 == 0 || count % 5 == 0){
+            sum += count;
+            count++;
+        }
+        else{count++;}
+    }
+    cout <<"The answer is:"<<sum << endl;
+
+    return 0;
+}
